@@ -9,10 +9,10 @@ t0 = 1  # Time at which to reverse motion
 
 def f(t):
     return D*t/t0
-    
-def g(t): 
+
+def g(t):
     return D - D/(P-t0)*t
-    
+
 def get_desired_position(time):
     if time < t0:
         return f(time)
@@ -43,5 +43,5 @@ while True:
     # calculate output signal
     # housekeeping - update previous-error and latest time
     pass
-    
+
 
